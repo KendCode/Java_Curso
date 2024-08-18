@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Series_2 {
+
+	public static void main(String[] args)
+	{
+		Scanner leer = new Scanner (System.in);
+		int n, k, sw=0, a=k;
+		
+		System.out.print("Ingrese un digito: ");
+		n = leer.nextInt();
+		
+		for(int i = 1; i<=n; i++)
+
+	}
+
+}

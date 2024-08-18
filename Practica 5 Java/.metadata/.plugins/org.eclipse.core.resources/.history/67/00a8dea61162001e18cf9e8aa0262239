@@ -1,0 +1,37 @@
+package vectores;
+
+import java.util.Scanner;
+
+public class Ejer_7_ {
+
+	public static void main(String[] args)
+	{
+		Scanner leer = new Scanner (System.in);
+		Vector FV = new Vector ();
+		int N;
+		int suma = 0, sumapares=0, cp=0, ts=0, tsp=0;
+		int[] V = new int [100];
+		
+		System.out.print("Ingrese la cantidad de elementos: ");
+		N = leer.nextInt();
+		
+		 FV.llenarVector2(N, V);
+		 FV.mostrarVector(N, V);
+		 
+		 for(int i=0; i<N; i++)
+		 {
+			 suma += V[i];
+				 if(V[i]%2==0){
+					 cp++;
+					 tsp = ts +V[i];
+				 }	
+		 }
+		 tsp /= cp;
+		 ts /= N;
+		 System.out.print("\n Suma: "+ts);
+		 System.out.print("\n Pares: "+tsp);
+		
+
+	}
+
+}
